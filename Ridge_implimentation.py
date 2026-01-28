@@ -61,8 +61,6 @@ print("R2 Score:", r2_score(y_test, y_pred_lr))
 
 
 
-
-
 ridge = Ridge()
 
 # Hyperparameter grid

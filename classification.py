@@ -13,11 +13,15 @@ X = np.array([
     [80, 1],
     [250, 6],
     [20, 0],
-    [400, 10]
+    [400, 10],
+    [34,1],
+    [95,3],
+    [150,4],
+    [250,6]
 ])
 
 y = np.array([
-    0, 1, 0, 1, 0, 1, 0, 1
+    0, 1, 0, 1, 0, 1, 0, 1,1,0,1,1
 ])
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -28,6 +32,9 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
+
+print(y_pred)
+
 
 new_email = np.array([[200, 5]])
 
